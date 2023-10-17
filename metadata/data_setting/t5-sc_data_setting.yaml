@@ -1,0 +1,11 @@
+excluded_domains: null
+add_slot: true
+add_slot_description: false # b/c of lack of input space.
+add_possible_values: false
+use_slot_permutation: false
+use_value_permutation: false
+use_referent_permutation: false
+last_k_turns: 2 # this is for last k turns in dialogue history NOT state.
+max_num_tokens_for_dialog: 220
+max_num_tokens_for_prompt: 99
+max_num_tokens_for_prev_state: 191

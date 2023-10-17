@@ -1,0 +1,10 @@
+excluded_domains: null
+add_slot: true
+add_slot_description: true
+add_possible_values: false
+use_slot_permutation: false
+use_value_permutation: false
+use_referent_permutation: false
+last_k_turns: null # null means all turns.
+max_num_tokens_for_dialog: 2304
+max_num_tokens_for_prompt: 384

@@ -1,0 +1,1188 @@
+[
+    {
+        "service_name": "CarInfo",
+        "slots": [
+            {
+                "name": "CarInfo-Make/Model",
+                "description": "the Make/Model of the CarInfo",
+                "possible_values": [],
+                "is_categorical": false,
+                "example_value": "",
+                "possible_referents": [
+                    "Global",
+                    "Caller",
+                    "Other Driver",
+                    "Caller's Passenger",
+                    "Other Driver's Passenger",
+                    "Witness"
+                ],
+                "type": ""
+            },
+            {
+                "name": "CarInfo-Make Year",
+                "description": "Includes vague relative descriptions such as \"about 10 years old\"",
+                "possible_values": [],
+                "is_categorical": false,
+                "example_value": "",
+                "possible_referents": [
+                    "Global",
+                    "Caller",
+                    "Other Driver",
+                    "Caller's Passenger",
+                    "Other Driver's Passenger",
+                    "Witness"
+                ],
+                "type": ""
+            },
+            {
+                "name": "CarInfo-Color",
+                "description": "the Color of the CarInfo",
+                "possible_values": [],
+                "is_categorical": false,
+                "example_value": "",
+                "possible_referents": [
+                    "Global",
+                    "Caller",
+                    "Other Driver",
+                    "Caller's Passenger",
+                    "Other Driver's Passenger",
+                    "Witness"
+                ],
+                "type": ""
+            },
+            {
+                "name": "CarInfo-Car Mileage",
+                "description": "Mileage on a vehicle.",
+                "possible_values": [],
+                "is_categorical": false,
+                "example_value": "",
+                "possible_referents": [
+                    "Global",
+                    "Caller",
+                    "Other Driver",
+                    "Caller's Passenger",
+                    "Other Driver's Passenger",
+                    "Witness"
+                ],
+                "type": ""
+            },
+            {
+                "name": "CarInfo-Rideshare (Uber/Lyft)",
+                "description": "Was the referent driving for a ride share service, like Uber, Lyft, etc?",
+                "possible_values": [
+                    "yes",
+                    "no",
+                    "unsure"
+                ],
+                "is_categorical": true,
+                "example_value": "",
+                "possible_referents": [
+                    "Global",
+                    "Caller",
+                    "Other Driver",
+                    "Caller's Passenger",
+                    "Other Driver's Passenger",
+                    "Witness"
+                ],
+                "type": ""
+            }
+        ]
+    },
+    {
+        "service_name": "Adjuster",
+        "slots": [
+            {
+                "name": "Adjuster-Explain Coverages",
+                "description": "Are insurance coverages being explained?",
+                "possible_values": [],
+                "is_categorical": false,
+                "example_value": "",
+                "possible_referents": [
+                    "Global",
+                    "Caller",
+                    "Other Driver",
+                    "Caller's Passenger",
+                    "Other Driver's Passenger",
+                    "Witness"
+                ],
+                "type": ""
+            },
+            {
+                "name": "Adjuster-Permission to Record",
+                "description": "Does the adjuster have the callers permission to record?",
+                "possible_values": [
+                    "yes",
+                    "no"
+                ],
+                "is_categorical": true,
+                "example_value": "",
+                "possible_referents": [
+                    "Global",
+                    "Caller",
+                    "Other Driver",
+                    "Caller's Passenger",
+                    "Other Driver's Passenger",
+                    "Witness"
+                ],
+                "type": ""
+            },
+            {
+                "name": "Adjuster-Set up Inspection",
+                "description": "What kind of inspection is set up?",
+                "possible_values": [
+                    "photo claim",
+                    "field assignment"
+                ],
+                "is_categorical": true,
+                "example_value": "",
+                "possible_referents": [
+                    "Global",
+                    "Caller",
+                    "Other Driver",
+                    "Caller's Passenger",
+                    "Other Driver's Passenger",
+                    "Witness"
+                ],
+                "type": ""
+            },
+            {
+                "name": "Adjuster-Set up Rental",
+                "description": "Does a rental vehicle need to be set up?",
+                "possible_values": [
+                    "yes",
+                    "no"
+                ],
+                "is_categorical": true,
+                "example_value": "",
+                "possible_referents": [
+                    "Global",
+                    "Caller",
+                    "Other Driver",
+                    "Caller's Passenger",
+                    "Other Driver's Passenger",
+                    "Witness"
+                ],
+                "type": ""
+            }
+        ]
+    },
+    {
+        "service_name": "TrafficEnvironment",
+        "slots": [
+            {
+                "name": "TrafficEnvironment-Weather Visibility",
+                "description": "The weather and visibility conditions.",
+                "possible_values": [
+                    "clear",
+                    "cloudy",
+                    "rainy",
+                    "snowy",
+                    "foggy",
+                    "windy",
+                    "other",
+                    "unsure"
+                ],
+                "is_categorical": true,
+                "example_value": "",
+                "possible_referents": [
+                    "Global",
+                    "Caller",
+                    "Other Driver",
+                    "Caller's Passenger",
+                    "Other Driver's Passenger",
+                    "Witness"
+                ],
+                "type": ""
+            },
+            {
+                "name": "TrafficEnvironment-Obstructions to View",
+                "description": "Were there any obstructions to the view, for example objects in the roadway, etc?",
+                "possible_values": [
+                    "yes",
+                    "no",
+                    "unsure"
+                ],
+                "is_categorical": true,
+                "example_value": "",
+                "possible_referents": [
+                    "Global",
+                    "Caller",
+                    "Other Driver",
+                    "Caller's Passenger",
+                    "Other Driver's Passenger",
+                    "Witness"
+                ],
+                "type": ""
+            },
+            {
+                "name": "TrafficEnvironment-Road Condition",
+                "description": "What is the condition of the roadway?",
+                "possible_values": [
+                    "dry",
+                    "wet",
+                    "slippery",
+                    "debris",
+                    "potholes",
+                    "straight",
+                    "curved",
+                    "tunnel",
+                    "steep incline",
+                    "flat",
+                    "other",
+                    "unsure"
+                ],
+                "is_categorical": true,
+                "example_value": "",
+                "possible_referents": [
+                    "Global",
+                    "Caller",
+                    "Other Driver",
+                    "Caller's Passenger",
+                    "Other Driver's Passenger",
+                    "Witness"
+                ],
+                "type": ""
+            },
+            {
+                "name": "TrafficEnvironment-Traffic Signal",
+                "description": "Description of the traffic signal, including traffic lights and stop signs."
+                "possible_values": [
+                    "stop sign",
+                    "yield sign",
+                    "green light",
+                    "yellow light",
+                    "red light",
+                    "other",
+                    "unsure",
+                    "no signal or sign"
+                ],
+                "is_categorical": true,
+                "example_value": "",
+                "possible_referents": [
+                    "Global",
+                    "Caller",
+                    "Other Driver",
+                    "Caller's Passenger",
+                    "Other Driver's Passenger",
+                    "Witness"
+                ],
+                "type": ""
+            },
+            {
+                "name": "TrafficEnvironment-Description of Lanes",
+                "description": "the Description of Lanes of the TrafficEnvironment",
+                "possible_values": [
+                    "normal",
+                    "turn lane",
+                    "shoulder",
+                    "other",
+                    "unsure"
+                ],
+                "is_categorical": true,
+                "example_value": "",
+                "possible_referents": [
+                    "Global",
+                    "Caller",
+                    "Other Driver",
+                    "Caller's Passenger",
+                    "Other Driver's Passenger",
+                    "Witness"
+                ],
+                "type": ""
+            },
+            {
+                "name": "TrafficEnvironment-Num of Lanes",
+                "description": "How many lanes on the road.   Be sure to use context in determining the number.  For example, if the text says 2 lanes in each direction then the value should be 4.",
+                "possible_values": [
+                    "1",
+                    "2",
+                    "3",
+                    "4+",
+                    "unsure"
+                ],
+                "is_categorical": true,
+                "example_value": "",
+                "possible_referents": [
+                    "Global",
+                    "Caller",
+                    "Other Driver",
+                    "Caller's Passenger",
+                    "Other Driver's Passenger",
+                    "Witness"
+                ],
+                "type": ""
+            },
+            {
+                "name": "TrafficEnvironment-Traffic Condition",
+                "description": "Description of the traffic condition, for example, whether the traffic was light or heavy.",
+                "possible_values": [
+                    "heavy",
+                    "moderate",
+                    "light",
+                    "other",
+                    "unsure"
+                ],
+                "is_categorical": true,
+                "example_value": "",
+                "possible_referents": [
+                    "Global",
+                    "Caller",
+                    "Other Driver",
+                    "Caller's Passenger",
+                    "Other Driver's Passenger",
+                    "Witness"
+                ],
+                "type": ""
+            },
+            {
+                "name": "TrafficEnvironment-Speed Limit",
+                "description": "the Speed Limit of the TrafficEnvironment",
+                "possible_values": [],
+                "is_categorical": false,
+                "example_value": "",
+                "possible_referents": [
+                    "Global",
+                    "Caller",
+                    "Other Driver",
+                    "Caller's Passenger",
+                    "Other Driver's Passenger",
+                    "Witness"
+                ],
+                "type": ""
+            },
+            {
+                "name": "TrafficEnvironment-Traffic Flow",
+                "description": "Description of the traffic flow, for example, the direction of traffic.",
+                "possible_values": [
+                    "one-way",
+                    "two-way",
+                    "other",
+                    "unsure"
+                ],
+                "is_categorical": true,
+                "example_value": "",
+                "possible_referents": [
+                    "Global",
+                    "Caller",
+                    "Other Driver",
+                    "Caller's Passenger",
+                    "Other Driver's Passenger",
+                    "Witness"
+                ],
+                "type": ""
+            },
+            {
+                "name": "TrafficEnvironment-Parking Lot Type",
+                "description": "Description of parking lot.",
+                "possible_values": [
+                    "angled",
+                    "straight",
+                    "other",
+                    "unsure"
+                ],
+                "is_categorical": true,
+                "example_value": "",
+                "possible_referents": [
+                    "Global",
+                    "Caller",
+                    "Other Driver",
+                    "Caller's Passenger",
+                    "Other Driver's Passenger",
+                    "Witness"
+                ],
+                "type": ""
+            }
+        ]
+    },
+    {
+        "service_name": "AccidentDetails",
+        "slots": [
+            {
+                "name": "AccidentDetails-Damage Part",
+                "description": "Damage part can also be called \"point of impact.\"",
+                "possible_values": [
+                    "front",
+                    "right",
+                    "back",
+                    "left",
+                    "front right",
+                    "front left",
+                    "back left",
+                    "back right",
+                    "other",
+                    "unsure"
+                ],
+                "is_categorical": true,
+                "example_value": "",
+                "possible_referents": [
+                    "Global",
+                    "Caller",
+                    "Other Driver",
+                    "Caller's Passenger",
+                    "Other Driver's Passenger",
+                    "Witness"
+                ],
+                "type": ""
+            },
+            {
+                "name": "AccidentDetails-Accident Location",
+                "description": "Location of the accident or loss.  Includes specific locations, for example, highway or street names, but also includes vague descriptions of locations, like in front of my moms house.",
+                "possible_values": [
+                    "parking lot",
+                    "driveway",
+                    "highway",
+                    "roadway",
+                    "intersection",
+                    "other"
+                ],
+                "is_categorical": true,
+                "example_value": "",
+                "possible_referents": [
+                    "Global",
+                    "Caller",
+                    "Other Driver",
+                    "Caller's Passenger",
+                    "Other Driver's Passenger",
+                    "Witness"
+                ],
+                "type": ""
+            },
+            {
+                "name": "AccidentDetails-Num of Passengers",
+                "description": "Number of passengers in the referent vehicle. Number of passengers should not include the driver.",
+                "possible_values": [
+                    "0",
+                    "1",
+                    "2+",
+                    "unsure"
+                ],
+                "is_categorical": true,
+                "example_value": "",
+                "possible_referents": [
+                    "Global",
+                    "Caller",
+                    "Other Driver",
+                    "Caller's Passenger",
+                    "Other Driver's Passenger",
+                    "Witness"
+                ],
+                "type": ""
+            },
+            {
+                "name": "AccidentDetails-Witnesses",
+                "description": "Were any witnesses present? If the text says there are no witnesses or the caller is unsure whether there were any witnesses, mark this text as \"no\" or \"unsure\" accordingly.",
+                "possible_values": [
+                    "yes",
+                    "no",
+                    "unsure"
+                ],
+                "is_categorical": true,
+                "example_value": "",
+                "possible_referents": [
+                    "Global",
+                    "Caller",
+                    "Other Driver",
+                    "Caller's Passenger",
+                    "Other Driver's Passenger",
+                    "Witness"
+                ],
+                "type": ""
+            },
+            {
+                "name": "AccidentDetails-Num of Involved Cars",
+                "description": "Includes the caller's car.",
+                "possible_values": [
+                    "1",
+                    "2",
+                    "3",
+                    "4+",
+                    "unsure"
+                ],
+                "is_categorical": true,
+                "example_value": "",
+                "possible_referents": [
+                    "Global",
+                    "Caller",
+                    "Other Driver",
+                    "Caller's Passenger",
+                    "Other Driver's Passenger",
+                    "Witness"
+                ],
+                "type": ""
+            },
+            {
+                "name": "AccidentDetails-Children Involved",
+                "description": "Were children involved in the accident?",
+                "possible_values": [
+                    "yes",
+                    "no",
+                    "unsure"
+                ],
+                "is_categorical": true,
+                "example_value": "",
+                "possible_referents": [
+                    "Global",
+                    "Caller",
+                    "Other Driver",
+                    "Caller's Passenger",
+                    "Other Driver's Passenger",
+                    "Witness"
+                ],
+                "type": ""
+            },
+            {
+                "name": "AccidentDetails-Airbag Deployed",
+                "description": "Were the airbags in the referent's vehicle deployed?",
+                "possible_values": [
+                    "yes",
+                    "no",
+                    "unsure"
+                ],
+                "is_categorical": true,
+                "example_value": "",
+                "possible_referents": [
+                    "Global",
+                    "Caller",
+                    "Other Driver",
+                    "Caller's Passenger",
+                    "Other Driver's Passenger",
+                    "Witness"
+                ],
+                "type": ""
+            },
+            {
+                "name": "AccidentDetails-Towed",
+                "description": "Was the referent's vehicle towed from the scene?",
+                "possible_values": [
+                    "yes",
+                    "no",
+                    "unsure"
+                ],
+                "is_categorical": true,
+                "example_value": "",
+                "possible_referents": [
+                    "Global",
+                    "Caller",
+                    "Other Driver",
+                    "Caller's Passenger",
+                    "Other Driver's Passenger",
+                    "Witness"
+                ],
+                "type": ""
+            },
+            {
+                "name": "AccidentDetails-Pedestrians Involved",
+                "description": "Were any pedestrians involved in the accident?",
+                "possible_values": [
+                    "yes",
+                    "no",
+                    "unsure"
+                ],
+                "is_categorical": true,
+                "example_value": "",
+                "possible_referents": [
+                    "Global",
+                    "Caller",
+                    "Other Driver",
+                    "Caller's Passenger",
+                    "Other Driver's Passenger",
+                    "Witness"
+                ],
+                "type": ""
+            },
+            {
+                "name": "AccidentDetails-Date of Accident",
+                "description": "Approximate date of the accident.  Includes specific dates, as well vague descriptions of days, like two days ago or last week.",
+                "possible_values": [],
+                "is_categorical": false,
+                "example_value": "",
+                "possible_referents": [
+                    "Global",
+                    "Caller",
+                    "Other Driver",
+                    "Caller's Passenger",
+                    "Other Driver's Passenger",
+                    "Witness"
+                ],
+                "type": ""
+            },
+            {
+                "name": "AccidentDetails-Time of Accident",
+                "description": "Approximate time of the accident.  Includes specific times of day, as well vague descriptions of time, like after work.",
+                "possible_values": [],
+                "is_categorical": false,
+                "example_value": "",
+                "possible_referents": [
+                    "Global",
+                    "Caller",
+                    "Other Driver",
+                    "Caller's Passenger",
+                    "Other Driver's Passenger",
+                    "Witness"
+                ],
+                "type": ""
+            },
+            {
+                "name": "AccidentDetails-Subjective Fault",
+                "description": "the Subjective Fault of the AccidentDetails",
+                "possible_values": [
+                    "caller",
+                    "other driver"
+                ],
+                "is_categorical": true,
+                "example_value": "",
+                "possible_referents": [
+                    "Global",
+                    "Caller",
+                    "Other Driver",
+                    "Caller's Passenger",
+                    "Other Driver's Passenger",
+                    "Witness"
+                ],
+                "type": ""
+            }
+        ]
+    },
+    {
+        "service_name": "ContactInfo",
+        "slots": [
+            {
+                "name": "ContactInfo-First Name",
+                "description": "the First Name of the ContactInfo",
+                "possible_values": [],
+                "is_categorical": false,
+                "example_value": "",
+                "possible_referents": [
+                    "Global",
+                    "Caller",
+                    "Other Driver",
+                    "Caller's Passenger",
+                    "Other Driver's Passenger",
+                    "Witness"
+                ],
+                "type": ""
+            },
+            {
+                "name": "ContactInfo-Last Name",
+                "description": "the Last Name of the ContactInfo",
+                "possible_values": [],
+                "is_categorical": false,
+                "example_value": "",
+                "possible_referents": [
+                    "Global",
+                    "Caller",
+                    "Other Driver",
+                    "Caller's Passenger",
+                    "Other Driver's Passenger",
+                    "Witness"
+                ],
+                "type": ""
+            },
+            {
+                "name": "ContactInfo-Home Address",
+                "description": "the Home Address of the ContactInfo",
+                "possible_values": [],
+                "is_categorical": false,
+                "example_value": "",
+                "possible_referents": [
+                    "Global",
+                    "Caller",
+                    "Other Driver",
+                    "Caller's Passenger",
+                    "Other Driver's Passenger",
+                    "Witness"
+                ],
+                "type": ""
+            },
+            {
+                "name": "ContactInfo-Phone Number",
+                "description": "the Phone Number of the ContactInfo",
+                "possible_values": [],
+                "is_categorical": false,
+                "example_value": "",
+                "possible_referents": [
+                    "Global",
+                    "Caller",
+                    "Other Driver",
+                    "Caller's Passenger",
+                    "Other Driver's Passenger",
+                    "Witness"
+                ],
+                "type": ""
+            },
+            {
+                "name": "ContactInfo-Email Address",
+                "description": "the Email Address of the ContactInfo",
+                "possible_values": [],
+                "is_categorical": false,
+                "example_value": "",
+                "possible_referents": [
+                    "Global",
+                    "Caller",
+                    "Other Driver",
+                    "Caller's Passenger",
+                    "Other Driver's Passenger",
+                    "Witness"
+                ],
+                "type": ""
+            },
+            {
+                "name": "ContactInfo-Policy Number",
+                "description": "the Policy Number of the ContactInfo",
+                "possible_values": [],
+                "is_categorical": false,
+                "example_value": "",
+                "possible_referents": [
+                    "Global",
+                    "Caller",
+                    "Other Driver",
+                    "Caller's Passenger",
+                    "Other Driver's Passenger",
+                    "Witness"
+                ],
+                "type": ""
+            },
+            {
+                "name": "ContactInfo-Date of Birth",
+                "description": "the Date of Birth of the ContactInfo",
+                "possible_values": [],
+                "is_categorical": false,
+                "example_value": "",
+                "possible_referents": [
+                    "Global",
+                    "Caller",
+                    "Other Driver",
+                    "Caller's Passenger",
+                    "Other Driver's Passenger",
+                    "Witness"
+                ],
+                "type": ""
+            }
+        ]
+    },
+    {
+        "service_name": "DriverActions",
+        "slots": [
+            {
+                "name": "DriverActions-Car Motion",
+                "description": "Describe the motion of the referents vehicle.",
+                "possible_values": [
+                    "traveling forward",
+                    "backing",
+                    "turning",
+                    "changing lanes",
+                    "stopped",
+                    "other",
+                    "unsure"
+                ],
+                "is_categorical": true,
+                "example_value": "",
+                "possible_referents": [
+                    "Global",
+                    "Caller",
+                    "Other Driver",
+                    "Caller's Passenger",
+                    "Other Driver's Passenger",
+                    "Witness"
+                ],
+                "type": ""
+            },
+            {
+                "name": "DriverActions-Speed",
+                "description": "Description of the speed of the referent. This may include specific values, like 45 mph, as well as less specific terms like they were going really fast.",
+                "possible_values": [],
+                "is_categorical": false,
+                "example_value": "",
+                "possible_referents": [
+                    "Global",
+                    "Caller",
+                    "Other Driver",
+                    "Caller's Passenger",
+                    "Other Driver's Passenger",
+                    "Witness"
+                ],
+                "type": ""
+            },
+            {
+                "name": "DriverActions-Distractions",
+                "description": "the Distractions of the DriverActions",
+                "possible_values": [
+                    "cellphone",
+                    "animals",
+                    "smoking",
+                    "passengers",
+                    "traffic",
+                    "eating",
+                    "not paying attention",
+                    "other",
+                    "unsure",
+                    "no distraction"
+                ],
+                "is_categorical": true,
+                "example_value": "",
+                "possible_referents": [
+                    "Global",
+                    "Caller",
+                    "Other Driver",
+                    "Caller's Passenger",
+                    "Other Driver's Passenger",
+                    "Witness"
+                ],
+                "type": ""
+            },
+            {
+                "name": "DriverActions-Brake",
+                "description": "the Brake of the DriverActions",
+                "possible_values": [
+                    "yes",
+                    "no",
+                    "unsure"
+                ],
+                "is_categorical": true,
+                "example_value": "",
+                "possible_referents": [
+                    "Global",
+                    "Caller",
+                    "Other Driver",
+                    "Caller's Passenger",
+                    "Other Driver's Passenger",
+                    "Witness"
+                ],
+                "type": ""
+            },
+            {
+                "name": "DriverActions-Horn",
+                "description": "the Horn of the DriverActions",
+                "possible_values": [
+                    "yes",
+                    "no",
+                    "unsure"
+                ],
+                "is_categorical": true,
+                "example_value": "",
+                "possible_referents": [
+                    "Global",
+                    "Caller",
+                    "Other Driver",
+                    "Caller's Passenger",
+                    "Other Driver's Passenger",
+                    "Witness"
+                ],
+                "type": ""
+            },
+            {
+                "name": "DriverActions-Turn Signal",
+                "description": "the Turn Signal of the DriverActions",
+                "possible_values": [
+                    "yes",
+                    "no",
+                    "unsure"
+                ],
+                "is_categorical": true,
+                "example_value": "",
+                "possible_referents": [
+                    "Global",
+                    "Caller",
+                    "Other Driver",
+                    "Caller's Passenger",
+                    "Other Driver's Passenger",
+                    "Witness"
+                ],
+                "type": ""
+            },
+            {
+                "name": "DriverActions-Traffic Controls Obeyed",
+                "description": "the Traffic Controls Obeyed of the DriverActions",
+                "possible_values": [
+                    "yes",
+                    "no",
+                    "unsure"
+                ],
+                "is_categorical": true,
+                "example_value": "",
+                "possible_referents": [
+                    "Global",
+                    "Caller",
+                    "Other Driver",
+                    "Caller's Passenger",
+                    "Other Driver's Passenger",
+                    "Witness"
+                ],
+                "type": ""
+            }
+        ]
+    },
+    {
+        "service_name": "Trip",
+        "slots": [
+            {
+                "name": "Trip-Destination of Trip",
+                "description": "Where was the driver headed to? This can be a specific location, like an address, or it can be more vague statement like I was heading to the supermarket.",
+                "possible_values": [],
+                "is_categorical": false,
+                "example_value": "",
+                "possible_referents": [
+                    "Global",
+                    "Caller",
+                    "Other Driver",
+                    "Caller's Passenger",
+                    "Other Driver's Passenger",
+                    "Witness"
+                ],
+                "type": ""
+            },
+            {
+                "name": "Trip-Purpose of Trip",
+                "description": "the Purpose of Trip of the Trip",
+                "possible_values": [],
+                "is_categorical": false,
+                "example_value": "",
+                "possible_referents": [
+                    "Global",
+                    "Caller",
+                    "Other Driver",
+                    "Caller's Passenger",
+                    "Other Driver's Passenger",
+                    "Witness"
+                ],
+                "type": ""
+            },
+            {
+                "name": "Trip-Origin of Trip",
+                "description": "Where did the driver start? This can be a specific location, like an address, or it can be more vague statement like I was coming home from work.",
+                "possible_values": [],
+                "is_categorical": false,
+                "example_value": "",
+                "possible_referents": [
+                    "Global",
+                    "Caller",
+                    "Other Driver",
+                    "Caller's Passenger",
+                    "Other Driver's Passenger",
+                    "Witness"
+                ],
+                "type": ""
+            }
+        ]
+    },
+    {
+        "service_name": "InjuryDetails",
+        "slots": [
+            {
+                "name": "InjuryDetails-Ambulance",
+                "description": "Was an ambulance used? Note that words like paramedic or EMT are also indicative of ambulance.",
+                "possible_values": [
+                    "yes",
+                    "no",
+                    "unsure"
+                ],
+                "is_categorical": true,
+                "example_value": "",
+                "possible_referents": [
+                    "Global",
+                    "Caller",
+                    "Other Driver",
+                    "Caller's Passenger",
+                    "Other Driver's Passenger",
+                    "Witness"
+                ],
+                "type": ""
+            },
+            {
+                "name": "InjuryDetails-Body Part Injured",
+                "description": "the Body Part Injured of the InjuryDetails",
+                "possible_values": [
+                    "head",
+                    "neck",
+                    "shoulder",
+                    "chest",
+                    "abdomen",
+                    "back",
+                    "limb",
+                    "other"
+                ],
+                "is_categorical": true,
+                "example_value": "",
+                "possible_referents": [
+                    "Global",
+                    "Caller",
+                    "Other Driver",
+                    "Caller's Passenger",
+                    "Other Driver's Passenger",
+                    "Witness"
+                ],
+                "type": ""
+            },
+            {
+                "name": "InjuryDetails-Injury Type",
+                "description": "the Injury Type of the InjuryDetails",
+                "possible_values": [
+                    "bruise",
+                    "broken fracture",
+                    "cut scratch",
+                    "bleeding",
+                    "strain sprain",
+                    "sore",
+                    "other",
+                    "no injury"
+                ],
+                "is_categorical": true,
+                "example_value": "",
+                "possible_referents": [
+                    "Global",
+                    "Caller",
+                    "Other Driver",
+                    "Caller's Passenger",
+                    "Other Driver's Passenger",
+                    "Witness"
+                ],
+                "type": ""
+            },
+            {
+                "name": "InjuryDetails-Medical Treatment",
+                "description": "the Medical Treatment of the InjuryDetails",
+                "possible_values": [
+                    "MRI",
+                    "surgery",
+                    "CAT scan",
+                    "hospitalization",
+                    "ER",
+                    "x-ray",
+                    "other"
+                ],
+                "is_categorical": true,
+                "example_value": "",
+                "possible_referents": [
+                    "Global",
+                    "Caller",
+                    "Other Driver",
+                    "Caller's Passenger",
+                    "Other Driver's Passenger",
+                    "Witness"
+                ],
+                "type": ""
+            }
+        ]
+    },
+    {
+        "service_name": "Evidences",
+        "slots": [
+            {
+                "name": "Evidences-Police Report",
+                "description": "Was a police report filed?",
+                "possible_values": [
+                    "yes",
+                    "no",
+                    "unsure"
+                ],
+                "is_categorical": true,
+                "example_value": "",
+                "possible_referents": [
+                    "Global",
+                    "Caller",
+                    "Other Driver",
+                    "Caller's Passenger",
+                    "Other Driver's Passenger",
+                    "Witness"
+                ],
+                "type": ""
+            },
+            {
+                "name": "Evidences-Police Department Name",
+                "description": "the Police Department Name of the Evidences",
+                "possible_values": [],
+                "is_categorical": false,
+                "example_value": "",
+                "possible_referents": [
+                    "Global",
+                    "Caller",
+                    "Other Driver",
+                    "Caller's Passenger",
+                    "Other Driver's Passenger",
+                    "Witness"
+                ],
+                "type": ""
+            },
+            {
+                "name": "Evidences-Pictures",
+                "description": "Were pictures taken? \"At scene\" refers to during the incident. \"After accident\" is like the Caller took the car to the repair shop and then took pictures.",
+                "possible_values": [
+                    "at scene",
+                    "after accident",
+                    "no picture",
+                    "unsure"
+                ],
+                "is_categorical": true,
+                "example_value": "",
+                "possible_referents": [
+                    "Global",
+                    "Caller",
+                    "Other Driver",
+                    "Caller's Passenger",
+                    "Other Driver's Passenger",
+                    "Witness"
+                ],
+                "type": ""
+            },
+            {
+                "name": "Evidences-Tickets Citations",
+                "description": "Did any of the parties receive a ticket or some other citation from the police?",
+                "possible_values": [
+                    "caller party cited",
+                    "other party cited",
+                    "no party cited",
+                    "multiple parties cited",
+                    "unsure",
+                    "no ticket"
+                ],
+                "is_categorical": true,
+                "example_value": "",
+                "possible_referents": [
+                    "Global",
+                    "Caller",
+                    "Other Driver",
+                    "Caller's Passenger",
+                    "Other Driver's Passenger",
+                    "Witness"
+                ],
+                "type": ""
+            },
+            {
+                "name": "Evidences-Police Report Number",
+                "description": "The police report number. Sometimes the Caller is \"unsure\" of the report number. Label this as well.",
+                "possible_values": [],
+                "is_categorical": false,
+                "example_value": "",
+                "possible_referents": [
+                    "Global",
+                    "Caller",
+                    "Other Driver",
+                    "Caller's Passenger",
+                    "Other Driver's Passenger",
+                    "Witness"
+                ],
+                "type": ""
+            },
+            {
+                "name": "Evidences-Skid Marks",
+                "description": "Were there skid marks at the scene of the accident?",
+                "possible_values": [
+                    "yes",
+                    "no",
+                    "unsure"
+                ],
+                "is_categorical": true,
+                "example_value": "",
+                "possible_referents": [
+                    "Global",
+                    "Caller",
+                    "Other Driver",
+                    "Caller's Passenger",
+                    "Other Driver's Passenger",
+                    "Witness"
+                ],
+                "type": ""
+            }
+        ]
+    }
+]
