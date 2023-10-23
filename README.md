@@ -8,9 +8,9 @@ The offical PyTorch implementation of the models used in DialGen paper. Please r
 
 <sup>1</sup>University of Washington</span> <sup>2</sup>Microsoft Research</span> <sup>3</sup>Allstate</span> <sup>4</sup>University of Hong Kong</span> <sup>5</sup>Allen Institute for AI</span>
 
-[[project]](https://nlp.borulu.com/DialGen/) [[paper]](https://arxiv.org/abs/2307.07047)
+[[project]](https://nlp.borulu.com/DialGen/) [[data]](https://github.com/boru-roylu/DialGenModel/tree/main/dialgen_data/v1.0) [[model]](https://github.com/boru-roylu/DialGenModel/tree/main) [[paper]](https://arxiv.org/abs/2307.07047) [[interface]](https://github.com/boru-roylu/DialGenFramework)
 
-This code has been written using PyTorch >= 1.13 and HuggingFace >= 4.21.2. If you use any source codes included in this repository in your work, please cite the following paper. The bibtex is listed below:
+This code has been written using PyTorch >= 1.13 and HuggingFace >= 4.27.3. If you use our source codes included in this repository in your work, please cite the following paper. The bibtex is listed below:
 
 ```text
 @misc{lu2023dialgen,
@@ -22,6 +22,18 @@ This code has been written using PyTorch >= 1.13 and HuggingFace >= 4.21.2. If y
       primaryClass={cs.CL}
 }
 ```
+
+## Experiment Results
+
+| Method     | $CB_{avg}$ | $CB_1$ | $CB_2$ | $CB_3$ | $CB_4$ | $TLB$ |
+| ---------- | :--------: | :----: | :----: | :----: | :----: | :---: |
+| IC-DST     |    71.3    |  71.9  |  68.5  |  68.4  |  68.2  | 68.1  |
+| T5         |    76.8    |  78.4  |  74.9  |  73.7  |  74.1  | 73.9  |
+| T5-SC      |    78.2    |  79.3  |  76.4  |  76.6  |  76.9  | 74.2  |
+| T5-SC $\S$ |    78.5    |  78.7  |  76.2  |  76.0  |  76.2  | 75.0  |
+
+The released data is with name substitution. All reported values represent the medians obtained from 5 different
+random seeds. $\S$: T5-SC model on data with name substitution.
 
 ## Environment Setup
 
